@@ -1,4 +1,4 @@
-// WAP to Use All Relational Operators
+// WAP to Use All Relational Operators by Differnt Comparisons
 
 let a = 10;
 let b = 20;
