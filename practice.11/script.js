@@ -25,9 +25,6 @@ console.log("a <= b =", a <= b);
 // Equal To (Value) Comparison //
 console.log("a == c =", a == c);
 
-// Strict Equal (Value + Data Type) Comparison //
-console.log("a === c =", a === c);
-
 // Not Equal (Value) Comparison //
 console.log("a != b =", a != b);
 
