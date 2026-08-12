@@ -1,4 +1,5 @@
-// wap to find min number from four numbers using nested if else.
+// wap to find minimum number from four numbers using nested if else.
+
 let A = 10;
 let B = 20;
 let C = 15;
