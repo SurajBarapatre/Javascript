@@ -1,4 +1,5 @@
 //  wap to find sum of all digits of a number exa. n = 456 , ans = 4+5+6 = 15 using while loop
+
 let num = 456;
 let sum = 0;
 
