@@ -1,4 +1,4 @@
-// wap to check number is palindrom or not exa. n = 121, ans = this number is palindrom number.
+// wap to check number is palindrom or not exa. n = 121, ans = this number is palindrom number using while loop.
 
 let n = 121; 
 let original = n;
