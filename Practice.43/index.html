@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+</head>
+<body>
+<script>
+
+// wap to convert to Celsius to Fahrenheit using function.
+
+function convertTemperature(celsius)
+{
+    let fahrenheit = (celsius * 9 / 5) + 32;
+
+    document.writeln("<h2>Temperature Converter</h2>");
+    document.writeln("Temperature in Celsius = " + celsius + "°C <br>");
+    document.writeln("Temperature in Fahrenheit = " + fahrenheit + "°F");
+}
+
+// Function Call
+convertTemperature(150);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+//wap to convert hours,minutes and seconds in this format 01:01:05 using function.
+
+function convertTime(second)
+{
+    let minutes = Math.floor((second % 3600) / 60);
+    let hours = Math.floor(second / 3600);
+    second = (second % 3600) % 60;
+
+    console.log(hours + ":" + minutes + ":" + second);
+}
+
+// Function Call
+convertTime(3665);
+
+</script>
+    
+</body>
+</html>
