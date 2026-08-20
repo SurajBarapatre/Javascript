@@ -38,7 +38,7 @@ for (let i = arr.length - 1; i >= 0; i--)
 
 // step 19: i >= 0 => -1 >= 0 => false
 
-// final output:
+// Final output:
 // 50
 // 40
 // 30
