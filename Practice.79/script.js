@@ -64,4 +64,4 @@ console.log("Sum Of All Elements of Array is : " + sum);
 
 // step 24: loop stops
 
-// final output: Sum Of All Elements of Array is : 45
+// Final output: Sum Of All Elements of Array is : 45
