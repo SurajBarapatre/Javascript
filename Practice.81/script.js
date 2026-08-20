@@ -44,5 +44,5 @@ console.log("Max Value of Array is : " + max);
 // step 20: i < num.length => 5 < 5 => false
 // step 21: loop stops
 
-// final output: Max Value of Array is : 40
+// Final output: Max Value of Array is : 40
 
