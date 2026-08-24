@@ -65,7 +65,7 @@
 
 //-------------------------------------------------------------------------------------------------------------//
 
-// 6.indexOf() :- array me Kisi value ka index find karta hai yani ki indexOf() alue mil gayi to uska index return karega
+// 6.indexOf() :- array me Kisi value ka index find karta hai yani ki indexOf() value mil gayi to uska index return karega
 
 // exa.
 
@@ -307,7 +307,7 @@
 
 //-------------------------------------------------------------------------------------------------------------//
 
-// toString() :- Ye bhi array ko string me convert karta hai
+// 21.toString() :- Ye bhi array ko string me convert karta hai
 
 // exa.
 
@@ -318,6 +318,242 @@
 // Output - 10,20,30
 
 //-------------------------------------------------------------------------------------------------------------//
+
+// 22.sort() :- Array elements ko sort karta hai yani ki array ke elements ko numeric comparison kar deta hai
+
+// exa.
+
+// Accending order -
+
+// let arr = [40, 10, 30, 20];
+
+// arr.sort(function(a, b)
+// {
+//     return a - b;
+// });
+
+// console.log(arr);
+
+// Output - [10, 20, 30, 40]
+
+
+// Descending Order -
+
+// arr.sort(function(a, b)
+// {
+//     return b - a;
+// });
+
+// Output - [40, 30, 20, 10]
+
+//-------------------------------------------------------------------------------------------------------------//
+
+// 23.reverse() :- Array ka order reverse karta hai yani ki ye array ke elements ko descending order me karta hai
+
+// exa.
+
+// let arr = [10, 20, 30, 40];
+
+// arr.reverse();
+
+// console.log(arr);
+
+// Output - [40, 30, 20, 10]
+
+//-------------------------------------------------------------------------------------------------------------//
+
+// 24.fill() :- Array ke elements ko same value se fill karta hai
+
+// Exa.
+
+// let arr = [1, 2, 3, 4];
+
+// arr.fill(0);
+
+// console.log(arr);
+
+// Output - [0, 0, 0, 0]
+
+//-------------------------------------------------------------------------------------------------------------//
+
+// 25.flat() :- ye Nested array ko flat yani ki simple array banata hai
+
+// exa.
+
+// let arr = [1, 2, [3, 4], [5, 6]];
+
+// console.log(arr.flat());
+
+// Output - [1, 2, 3, 4, 5, 6]
+
+//-------------------------------------------------------------------------------------------------------------//
+
+// 26.flatMap() :- ye map() + flat() ka combination hai 
+
+// exa. 
+
+// let arr = [1, 2, 3];
+
+// let result = arr.flatMap(function(value)
+// {
+//     return [value, value * 2];
+// });
+
+// console.log(result);
+
+// Output - [1, 2, 2, 4, 3, 6]
+
+//-------------------------------------------------------------------------------------------------------------//
+
+// 27.at() :- Specific index ka element access karta hai.
+
+// exa.
+
+//  let arr = [10, 20, 30, 40];
+
+// console.log(arr.at(2));
+
+// Output - 30
+
+
+// Negative index bhi use kar sakte hain jisse last elements mil jata hai
+
+// exa.
+
+// let arr = [10, 20, 30, 40];
+
+// console.log(arr.at(-1));
+
+// Output - 40
+
+//-------------------------------------------------------------------------------------------------------------//
+
+// 28.Array.isArray() :- Check karta hai ki given value array hai ya nahi agar array hai to true nahi to false
+
+// exa.
+
+// let arr = [10, 20, 30];
+
+// console.log(Array.isArray(arr));
+
+// Output - true
+
+
+// let num = 10;
+
+// console.log(Array.isArray(num));
+
+// Output - false
+
+//-------------------------------------------------------------------------------------------------------------//
+
+// 29.toSorted() :- ye new array return karta hai
+
+// exa.
+
+// let arr = [30, 10, 20];
+
+// let result = arr.toSorted();
+
+// console.log(result);
+// console.log(arr);
+
+// Output - 
+
+//[10, 20, 30]
+//[30, 10, 20]
+
+//-------------------------------------------------------------------------------------------------------------//
+
+// 30.toReversed() :- ye Reverse array ko return karta hai
+
+// exa.
+
+// let arr = [10, 20, 30];
+
+// let result = arr.toReversed();
+
+// console.log(result);
+
+// Output - [30, 20, 10]
+
+//-------------------------------------------------------------------------------------------------------------//
+
+// 31.toSpliced() :- iska splice() jaisa kaam karta hai, lekin original array ko change nahi karta
+
+// exa.
+
+// let arr = [10, 20, 30, 40];
+
+// let result = arr.toSpliced(1, 2);
+
+// console.log(result);
+// console.log(arr);
+
+// [10, 40]
+// [10, 20, 30, 40]
+
+//-------------------------------------------------------------------------------------------------------------//
+
+// 32.with() :- ye Specific index ki value ko replace karke new array return karta hai
+
+// exa.
+
+// let arr = [10, 20, 30];
+
+// let result = arr.with(1, 100);
+
+// console.log(result);
+
+// Output - [10, 100, 30]
+
+
+// Original array :
+
+// [10, 20, 30]
+
+//-------------------------------------------------------------------------------------------------------------//
+
+// to ye hai array ke methods inme se jo most importent aur mostly practical use hone wali methods niche diye gaye list hai.
+
+// push()
+// pop()
+//shift()
+//unshift()
+//indexOf()
+//includes()
+//forEach()
+//map()
+//filter()
+//find()
+//reduce()
+//sort()
+//reverse()
+//slice()
+//splice()
+//concat()
+
+
+// inme sabse importent difference yaad rakhe.
+
+// push()     → End me add
+// pop()      → End se remove
+
+// unshift()  → Start me add
+// shift()    → Start se remove
+
+// slice()    → Copy karta hai, original generally unchanged
+// splice()   → Original array ko modify karta hai
+
+// map()      → New array
+// filter()   → New filtered array
+// reduce()   → Single value
+// forEach()  → Mainly iteration, return value useful nahi
+
+//-------------------------------------------------------------------------------------------------------------//
+
+
+
 
 
 
