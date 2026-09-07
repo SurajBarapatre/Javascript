@@ -1,0 +1,37 @@
+* {
+  margin: 0px;                                  
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(204, 207, 207);
+}
+
+.form-box {
+  height: 450px;
+  width: 350px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.form-box input,button {
+  width: 100%;
+  height: 30px;
+}
