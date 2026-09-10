@@ -1,0 +1,7 @@
+#notes-box > div {                                   /* style for the notes box*/
+    min-width: 0; 
+    height: auto;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
