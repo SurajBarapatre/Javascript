@@ -1,11 +1,10 @@
-// create a digital clock when showcase current date and time ,month ,am/pm wise time and 24 hrs type change time
+// create a digital clock when showcase current date and time ,month ,am/pm wise time and 24 hrs type change time.
 
 // Select HTML elements
 const date = document.getElementById("date");                  // select input field for when can get date     
 const time = document.getElementById("time");                 // select input field for when can get time
 const ampm = document.getElementById("ampm");                 // select input field for when can get am/pm
 const changeBtn = document.getElementById("changeBtn");       // select input field for when can change button
-
 
 // Default time format
 let is24Hour = false;                                          // for 12-hour format will be used.
