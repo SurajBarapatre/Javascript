@@ -6,6 +6,7 @@ const time = document.getElementById("time");                 // select input fi
 const ampm = document.getElementById("ampm");                 // select input field for when can get am/pm
 const changeBtn = document.getElementById("changeBtn");       // select input field for when can change button
 
+
 // Default time format
 let is24Hour = false;                                          // for 12-hour format will be used.
 
@@ -34,8 +35,8 @@ function digitalClock() {                                     // create a functi
     let seconds = now.getSeconds();                          // get seconds for display
 
     // Add 0 before single digit
-    minutes = String(minutes).padStart(2, "0");                // for minutes to string with current digit                        
-    seconds = String(seconds).padStart(2, "0");                // for seconds to string with current digit 
+    minutes = String(minutes).padStart(2, "0");                // for minutes to start string with current digit                        
+    seconds = String(seconds).padStart(2, "0");                // for seconds to start string with current digit 
 
     // 12 Hour Format
     if (is24Hour == false) {                                  // for display default 12 hours format
@@ -54,7 +55,7 @@ function digitalClock() {                                     // create a functi
         if (hours == 0) {                                  // for check condition to get hours equal to 12 and convert 12 hours format 
             hours = 12;
         }
-        hours = String(hours).padStart(2, "0");            // for hours to string with current digit 
+        hours = String(hours).padStart(2, "0");            // for hours to start string with current digit 
 
         // Display time
         time.textContent =                                 // for display to show time current format
@@ -66,7 +67,7 @@ function digitalClock() {                                     // create a functi
 
     // 24 Hour Format
     else {
-        hours = String(hours).padStart(2, "0");             // for display to time in 24 hours format
+        hours = String(hours).padStart(2, "0");             // for display to time in start string in 24 hours format
         time.textContent =
             hours + ":" + minutes + ":" + seconds;         // for display to show time current format
 
