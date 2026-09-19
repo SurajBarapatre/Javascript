@@ -225,7 +225,7 @@ function getRandomQuestions() {
 
 // For No question counted yet :-
 // ---------------------------------
-    answeredQuestions =new Array(quizQuestions.length).fill(false);
+    answeredQuestions = new Array(quizQuestions.length).fill(false);
 
 // For Show first question
 showQuestion();
@@ -372,7 +372,7 @@ function saveAnswer() {
 
 // For Check answer :-
 // ---------------------------------
-    if (selectedAnswer === correctAnswer) {
+    if (selectedAnswer == correctAnswer) {
         userScore++;
     }
 }
