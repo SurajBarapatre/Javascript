@@ -11,7 +11,7 @@
 
     .page-title {
         font-weight: 700;
-        letter-spacing: .3px;
+        letter-spacing:.3px;
         color: #1f2937;
     }
 
@@ -41,14 +41,14 @@
     .form-select,
     #price-filter {
         min-height: 44px;
-        border-radius: 10px !important;
-        border-color: #d7dce3 !important;
+        border-radius: 10px;
+        border-color: #d7dce3;
     }
 
     .form-control:focus,
     #price-filter:focus {
-        border-color: #86b7fe !important;
-        box-shadow: 0 0 0 .2rem rgba(13, 110, 253, .12) !important;
+        border-color: #86b7fe;
+        box-shadow: 0 0 0 .2rem rgba(13, 110, 253, .12);
     }
 
     .main-action {
@@ -81,7 +81,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        color: #495057 !important;
+        color: #495057;
         background: #fff;
     }
 
