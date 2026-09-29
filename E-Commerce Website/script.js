@@ -44,7 +44,7 @@ let dataChanged = false;
 allProducts = allProducts.map((product) => {  
 if (!product.id) {                 
   dataChanged = true;
-    return {...product,     
+    return {product,     
 // for create unique is and identify all elements by these unique id :-
 // ------------------------------------------------------------------
     id: Date.now() + Math.random()
@@ -273,7 +273,7 @@ const searchProduct = () => {
 //----------------------------------------------------------
     if (selectedCategory != "All Products") {
         filteredProducts = [
-            ...new Map(
+            new Map(
                 filteredProducts.map((product) => [
                     String(product.name).trim().toLowerCase(),
                     product
