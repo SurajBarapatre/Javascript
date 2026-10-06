@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Ecom-User</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!---Navbar Section-->
     <nav class="navbar bg-body-tertiary mb-3">
-      <div class="container-fluid">
-        <a class="navbar-brand fw-bold">Ecom-User</a>
-        <div class="d-flex gap-3">
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
-          <a class="btn btn-primary" href="cart.html">View Cart</a>
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold">Ecom-User</a>
+            <div class="d-flex gap-3">
+
+                <!-- Search Form -->
+    <form class="d-flex" role="search">
+    <input class="form-control me-2"type="search"placeholder="Search"aria-label="Search"id="search-input">
+
+    <button class="btn btn-outline-success"type="submit"title="Search">
+        <i class="bi bi-search"></i>
+    </button>
+</form>         <!-- View Cart Button -->
+        <a class="btn btn-primary" href="cart.html">View Cart</a>
         </div>
-      </div>
+        </div>
     </nav>
+
+     <!-- Products Section -->
     <section class="container-fluid">
-      <div
-        id="products-container"
-        class="container d-flex gap-2 flex-wrap"
-      ></div>
+        <div id="products-container"class="container d-flex gap-3 flex-wrap justify-content-center"></div>
     </section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
