@@ -31,6 +31,94 @@ let selectedCategory = "All Products";
 // --------------------------------------
 let allProducts = JSON.parse(localStorage.getItem("products")) || [];
 
+// for add default products of all categories :-
+// ----------------------------------------------
+const defaultProducts = [
+  {
+    id: 101,
+    name: "Burger",
+    price: "150",
+    category: "Foods",
+    description: "Fresh and tasty burger",
+    discount: "10",
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd",
+    rating: "4.5"
+  },
+  {
+    id: 102,
+    name: "T-Shirt",
+    price: "499",
+    category: "Clothes",
+    description: "Comfortable cotton t-shirt",
+    discount: "15",
+    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+    rating: "4.3"
+  },
+  {
+    id: 103,
+    name: "Rice",
+    price: "650",
+    category: "Grocery",
+    description: "Premium quality rice",
+    discount: "5",
+    image: "https://images.unsplash.com/photo-1586201375761-83865001e31c",
+    rating: "4.4"
+  },
+  {
+    id: 104,
+    name: "Face Cream",
+    price: "299",
+    category: "Beauty",
+    description: "Moisturizing face cream",
+    discount: "12",
+    image: "https://images.unsplash.com/photo-1556228578-8c89e6adf883",
+    rating: "4.2"
+  },
+  {
+    id: 105,
+    name: "Tomato",
+    price: "80",
+    category: "Vegetables",
+    description: "Fresh red tomatoes",
+    discount: "8",
+    image: "https://images.unsplash.com/photo-1546094096-0df4bcaaa337",
+    rating: "4.6"
+  },
+  {
+    id: 106,
+    name: "Apple",
+    price: "180",
+    category: "Fruits",
+    description: "Fresh and juicy apples",
+    discount: "10",
+    image: "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6",
+    rating: "4.7"
+  },
+  {
+    id: 107,
+    name: "Headphones",
+    price: "1299",
+    category: "Electronics",
+    description: "Wireless Bluetooth headphones",
+    discount: "20",
+    image: "https://images.unsplash.com/photo-1505740420568-5e560c06d30e",
+    rating: "4.5"
+  }
+];
+
+// for store default products in local storage :-
+// ----------------------------------------------
+if (allProducts.length == 0) {                                 
+
+  // for add default products into all Products :-
+  //---------------------------------------------
+  allProducts = defaultProducts;
+
+  // for save all products in local storage :-
+  //------------------------------------------
+  localStorage.setItem("products",JSON.stringify(allProducts));
+}
+
 // for edit product and other elements :-
 // --------------------------------------
 let editProductId = null;
@@ -44,7 +132,7 @@ let dataChanged = false;
 allProducts = allProducts.map((product) => {  
 if (!product.id) {                 
   dataChanged = true;
-    return {product,     
+    return {...product,     
 // for create unique is and identify all elements by these unique id :-
 // ------------------------------------------------------------------
     id: Date.now() + Math.random()
@@ -273,7 +361,7 @@ const searchProduct = () => {
 //----------------------------------------------------------
     if (selectedCategory != "All Products") {
         filteredProducts = [
-            new Map(
+            ...new Map(
                 filteredProducts.map((product) => [
                     String(product.name).trim().toLowerCase(),
                     product
