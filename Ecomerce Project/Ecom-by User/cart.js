@@ -212,7 +212,8 @@ const displayProductsFromCart = (products = null) => {
             </strong>
           </p>
 
-          <!-- for quantity buttons :- -->
+// for quantity buttons :-
+----------------------------
           <div class="d-flex align-items-center gap-3">
 
             <button class="btn btn-primary"
@@ -233,13 +234,14 @@ const displayProductsFromCart = (products = null) => {
             </button>
           </div>
 
-
-          <!-- for display product total :- -->
+// for display product total :-
+-----------------------------
           <p class="mt-3 fw-bold">
             Product Total:${productTotal.toFixed(2)} USD
           </p>
 
-          <!-- for display available stock :- -->
+//for display available stock :-
+-----------------------------
           <p class="text-secondary">
             Available Stock:${element.stock}
           </p>
