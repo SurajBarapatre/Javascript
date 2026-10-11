@@ -152,7 +152,8 @@ div.innerHTML = `<img
     </li>
   </ul>
 
-  <!----Add to cart button at bottom :---->
+  // for Add to cart button at bottom :-
+  ------------------------------------
   <div class="card-body mt-auto">
     <button
       class="btn btn-primary w-100"
@@ -265,7 +266,7 @@ searchInput.addEventListener("input",() => {
   const searchValue = searchInput.value.toLowerCase().trim();
 
 // for condition if search box is empty then display all products :-
-//-------------------------------------------------------
+//---------------------------------------------------------------
     if (searchValue == "") {
 // for a display all products :-
 //----------------------------
